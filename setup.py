@@ -7,7 +7,7 @@ setup(name='pythreatgrid',
 	description='Python ThreatGrid API wrapper',
 	author='Stephen Hosom, Rusty Bower',
 	author_email='0xhosom@gmail.com, rusty@rustybower.com',
-	url='https://github.com/hosom/pythreatgrid',
+	url='https://github.com/rustybower/pythreatgrid',
 	packages=['pythreatgrid'],
 	install_requires=['requests'],
 )
