@@ -1,16 +1,20 @@
 language: python
 python:
-  - "2.7"
-  - "3.3"
-  - "3.4"
-  - "3.5"
-  - "3.5-dev"  # 3.5 development branch
-  - "3.6"
-  - "3.6-dev"  # 3.6 development branch
-  - "3.7-dev"  # 3.7 development branch
-# command to install dependencies
+- '2.7'
+- '3.3'
+- '3.4'
+- '3.5'
+- 3.5-dev
+- '3.6'
+- 3.6-dev
+- 3.7-dev
 install:
-  - pip install -e .
-  - pip install -r tests/requirements.txt
+- pip install -e .
+- pip install -r tests/requirements.txt
 script:
-  - flake8 --ignore E501 --exclude *__init__.py ./
+- flake8 --ignore E501 --exclude *__init__.py ./
+deploy:
+  provider: pypi
+  user: rustybower
+  password:
+    secure: EhQcqtb8QTtIyOCQ2qs5ux98PLxnP/DHa5aCICQapcuxnNeB1qNAkA9Gjjs4kVLnUdUUrrQ4GOzUwcSdDRLtlwbo4ElLiu0RTbVspNADdue6kNxCKOvjLYGMWBIngHEF2ZTS8HexTddwltlKvQOTmHyCpoMVlGrjWTcT2m7KK7xJ/aE+VyyaAUCSH2MPn8qqIlVLPkUeLBzh1KSeO778fPcixHqh353TNLBEX98qFha8+KYAESa3CqsFqJOi3tZDIJxYbyeFkE1nzQyNsAKqqgLlYE/ErM0Bsfn8NHCXgN1hgNQxM0hG/rXrTxiLhWwnCwylIQwwGF4ZozKWcSIZRdzijHq/5/E+936YRROOmPUm8cXPzcmfATEGZSrlysitxIVdQrIDk68fb0Vd7xfH1lK9qGEpV23DzlNlxSzApAiqMFLL8+KrLp5hMl9h7PAWoUH7CzHjW6QrTOLssBED6uR3uX8Z4+cUqnAQAKLnr9MGw9u/929TCrBzjkvRfXUFkgvKzt/2e84T2RD5izXq9DFAlpHQH2ynpLrHFoOsYxxvnvClyGxSt7vRJDcdkz3dqFl6+4nDFwfX8aqgRUqQ3a8qONAt6ZgsyU5HvXvOl2js+7ruFBTcT+PA8vZe86jeK5xc62/hh+dSWEHhSgp5kYN/4A5lTOmgnYe6CpS3zvM=
