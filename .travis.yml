@@ -11,6 +11,7 @@ python:
   - "3.7-dev"  # 3.7 development branch
 # command to install dependencies
 install:
-  - pip install .
+  - pip install -e .
+  - pip install -r tests/requirements.txt
 script:
-  - pytest
+  - flake8 --ignore E501 --exclude *__init__.py ./
