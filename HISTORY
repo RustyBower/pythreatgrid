@@ -3,6 +3,16 @@
 History
 -------
 
+1.0.2 (2018-05-08)
+------------------
+
+* Adding supported Python versions
+
+1.0.1 (2018-05-08)
+------------------
+
+* Bumping version to sync PyPI with correct download link
+
 1.0.0 (2018-05-08)
 ------------------
 
