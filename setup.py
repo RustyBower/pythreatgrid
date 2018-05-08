@@ -1,15 +1,13 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 
 from distutils.core import setup
 
 setup(name='pythreatgrid',
-	version='0.1',
-	description='Python Threatgrid API hooks.',
-	author='Stephen Hosom',
-	author_email='0xhosom@gmail.com',
+	version='0.2',
+	description='Python ThreatGrid API wrapper',
+	author='Stephen Hosom, Rusty Bower',
+	author_email='0xhosom@gmail.com, rusty@rustybower.com',
 	url='https://github.com/hosom/pythreatgrid',
 	packages=['pythreatgrid'],
-	install_requires=[
-		'requests',
-	],
-	)
+	install_requires=['requests'],
+)
