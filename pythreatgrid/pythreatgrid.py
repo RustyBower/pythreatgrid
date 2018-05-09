@@ -3,6 +3,9 @@ import requests
 
 
 class ThreatGrid(object):
+    """
+    Python wrapper to interface with the ThreatGrid API
+    """
     def __init__(self, api_host, api_key, filename=None, vm=None, private=False, tags=[], playbook=None,
                  network_exit=None):
         # TODO - Fix potential issue if user passes / as the last character in the api host
