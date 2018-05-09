@@ -10,7 +10,7 @@ def read(fname):
 setup(name='pythreatgrid',
       version='1.0.9',
       description='Python ThreatGrid API wrapper',
-      long_description=read('README.md') + '\n\n' + read('HISTORY'),
+      long_description=read('README.md') + '\n\n' + read('CHANGES.md'),
       long_description_content_type='text/markdown',
       author='Stephen Hosom, Rusty Bower',
       author_email='0xhosom@gmail.com, rusty@rustybower.com',
