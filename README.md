@@ -1,7 +1,11 @@
-# pythreatgrid
+[![Build Status](https://travis-ci.org/RustyBower/pythreatgrid.svg?branch=master)](https://travis-ci.org/RustyBower/pythreatgrid)
+
+pythreatgrid
+============
 A Python wrapper for the ThreatGrid API
 
-### Installation
+Installation
+------------
 Install via PIP
 ```
 pip install pythreatgrid
@@ -14,7 +18,8 @@ cd pythreatgrid
 python setup.py install
 ```
 
-### Usage
+Usage
+-----
 ```
 import pythreatgrid
 t = pythreatgrid.ThreatGrid(api_key='API_KEY', api_host='API_HOST')
