@@ -8,13 +8,13 @@ def read(fname):
 
 
 setup(name='pythreatgrid',
-      version='1.0.7',
+      version='1.0.8',
       description='Python ThreatGrid API wrapper',
       long_description=read('README.md') + '\n\n' + read('HISTORY'),
       long_description_content_type='text/markdown',
       author='Stephen Hosom, Rusty Bower',
       author_email='0xhosom@gmail.com, rusty@rustybower.com',
-      download_url='https://github.com/RustyBower/pythreatgrid/archive/v1.0.7.tar.gz',
+      download_url='https://github.com/RustyBower/pythreatgrid/archive/v1.0.8.tar.gz',
       url='https://github.com/RustyBower/pythreatgrid',
       packages=['pythreatgrid'],
       install_requires=['requests'],
