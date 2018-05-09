@@ -17,6 +17,6 @@ python setup.py install
 ### Usage
 ```
 import pythreatgrid
-t = pythreatgrid.ThreatGrid(api_key='API_KEY')
+t = pythreatgrid.ThreatGrid(api_key='API_KEY', api_host='API_HOST')
 result = t.submit_sample(open('/path/to/executable', 'rb'))
 ```

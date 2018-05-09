@@ -5,6 +5,7 @@ import requests
 class ThreatGrid(object):
     def __init__(self, api_host, api_key, filename=None, vm=None, private=False, tags=[], playbook=None,
                  network_exit=None):
+        # TODO - Fix potential issue if user passes / as the last character in the api host
         self.api_host = api_host
         self.api_key = api_key
         self.filename = filename
