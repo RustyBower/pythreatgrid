@@ -60,8 +60,8 @@ class ThreatGrid(object):
     def get_samples_id_video(self, sample_id):
         # GET /samples/ID/video.webm
         # Requests the samples display output, transcoded to WEBM format. May
-        # only be used with samples with a state of “succ”. Future revisions may
-        # provide support for “fail” samples. This returns the WEBM stream, as
+        # only be used with samples with a state of "succ". Future revisions may
+        # provide support for "fail" samples. This returns the WEBM stream, as
         # video/webm content-type.
         return self.make_get_request('%s/samples/%s/video.webm' % (self.api_host, sample_id))
 
@@ -143,8 +143,8 @@ class ThreatGrid(object):
     def get_samples_id_extracted_artifacts(self, sample_id):
         # GET /samples/ID/extracted-artifacts.zip
         # Zip archive containing artifacts extracted from the sample during
-        # analysis. Artifacts with an Origin of “extracted” in the artifacts
-        # section of the sample’s analysis.json are found in this
+        # analysis. Artifacts with an Origin of "extracted" in the artifacts
+        # section of the sample's analysis.json are found in this
         # archive. Related:
         # /samples/ID/network-artifacts.zip
         # for artifacts extracted from the PCAP.
