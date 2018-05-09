@@ -3,6 +3,16 @@
 History
 -------
 
+1.0.6 (2018-05-09)
+------------------
+
+* Updating documentation and renaming files
+
+1.0.5 (2018-05-09)
+------------------
+
+* Fixing setup.py to properly include README and HISTORY files
+
 1.0.4 (2018-05-08)
 ------------------
 
