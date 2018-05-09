@@ -14,9 +14,8 @@ install:
 script:
 - flake8 --ignore E501 --exclude *__init__.py ./
 deploy:
-  on:
-    python: '3.6'
   provider: pypi
+  skip_existing: true
   user: rustybower
   password:
     secure: RPEqdLTtlvP/yV0YjiiiEK3MQmCMrrY/Ld/t3KbiZh6jEn0SLAL3RsWmkUWqQBNejw5rXpIrMH0uJjamFxLkSYi1KOELfb+YD5ndOHlOcYzWAqIjKiUFQ2pptg7t1EZVCNUIfu41/tQi2yMBArQEPRSJuTUtVI/F/OLrb7a2IStMexXuvTytPTc/CRKqCSN1NQzsWFvgTq07okdjeobX62R6Aoe4az+SG+uo4pbSa6fdhVVTABabeOpz9firBdx1XNKCrIPTsRzAMCtmVxr5ZbyStGmEpEwr6c/zYTvuEBnreiO3AOj7yCAwn1QwBWbZ1PcfXsWL7EfzUvT4RC1LGj9ogeoG/hbhHjzZ53ukcI6ylhgE/mPl6QuUNujlQwFKQI9pXiBiLA/o+xsC0NsWH4VvyZVDyP0T6w0RgFCwzyiIGLuPvKb+q22qYyHF1YyFU5hFdgxmeT7a9N1ia5ZAswbWaoUijYLwCn1Fbm131XS0wAY0jZBb/RbnHdQE+nrew2SFLhprdrzlhJcQ7sVIUxphRzbBD3//pNiImFyKLtEpcYrS0tws9tkE0qu8OwXhWgg1Vzm+n/Eq6JZrCNwW8fLaYZkTQmLJBbWxMZvTn3gHOltTltbpRYSGdYynHZ8dSRCYg+nCmWZMWFfgT571Aj1PVcB3cO7O2mOeqAa57eU=
