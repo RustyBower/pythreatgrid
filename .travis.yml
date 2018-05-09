@@ -15,6 +15,7 @@ script:
 - flake8 --ignore E501 --exclude *__init__.py ./
 deploy:
   provider: pypi
+  distributions: sdist bdist_wheel
   skip_existing: true
   user: rustybower
   password:
