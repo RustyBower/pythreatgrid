@@ -5,12 +5,12 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(name='pythreatgrid',
-      version='1.0.4',
+      version='1.0.5',
       description='Python ThreatGrid API wrapper',
       long_description=read('README.md') + '\n\n' + read('HISTORY')
       author='Stephen Hosom, Rusty Bower',
       author_email='0xhosom@gmail.com, rusty@rustybower.com',
-      download_url='https://github.com/RustyBower/pythreatgrid/archive/v1.0.4.tar.gz',
+      download_url='https://github.com/RustyBower/pythreatgrid/archive/v1.0.5.tar.gz',
       url='https://github.com/RustyBower/pythreatgrid',
       packages=['pythreatgrid'],
       install_requires=['requests'],
