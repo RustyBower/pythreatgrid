@@ -1,4 +1,4 @@
 try:
-	from pythreatgrid import *
+	from pythreatgrid import ThreatGrid
 except ImportError:
-	from .pythreatgrid import *
+	from .pythreatgrid import ThreatGrid
